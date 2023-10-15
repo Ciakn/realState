@@ -1,0 +1,48 @@
+.navContainer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.text {
+  color: var(--light);
+  font-weight: bold;
+  cursor: pointer;
+}
+.navContainer {
+  width: auto;
+  background-color: var(--primary);
+  height: 50px;
+  text-align: center;
+  display: flex;
+}
+.moreOptionContainer{
+    background-color: var(--primary);
+    width: 160px;
+    height: 190px;
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+
+}
+.homeContainer {
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  box-shadow: var(--box-shadow);
+  gap: 1rem;
+}
+.btn-pri {
+  background-color: var(--primary) !important;
+}
+.card img {
+  width: auto;
+  height: 150px;
+}
+.card-body {
+  border: none;
+  box-shadow: var(--box-shadow);
+  outline: none;
+}

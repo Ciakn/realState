@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: none;
+}
+:root {
+  --primary: #944bbb;
+  --dark: #343a40;
+  --light: #f4f4f8;
+  --box-shadow: 1px 1px 7px #e6e6ea;
+  --green: #588157;
+  --secondary: #6c757d;
+  --border-radius: 5px 8px;
+  --padding: 7px 12px;
+}

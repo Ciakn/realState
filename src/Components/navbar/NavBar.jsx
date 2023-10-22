@@ -44,16 +44,28 @@ const MoreOptions = ({ checkIfChecked }) => {
     <div className="moreOptionContainer">
       <div className="optionList">
         <div>room : {}</div>
-        <div onClick={() => checkIfChecked({ type: "filter" })}>
-          <input type="checkbox" id="parking" />
+        <div>
+          <input
+            onClick={() => checkIfChecked({ type: "parking", id: 1 })}
+            type="checkbox"
+            id="parking"
+          />
           <label htmlFor="parking"> Parking lot</label>
         </div>
-        <div onClick={() => checkIfChecked({ type: "filter" })}>
-          <input id="balcony" type="checkbox" />
+        <div>
+          <input
+            onClick={() => checkIfChecked({ type: "balcony", id: 2 })}
+            id="balcony"
+            type="checkbox"
+          />
           <label htmlFor="balcony">Balconey</label>
         </div>
-        <div onClick={() => checkIfChecked({ type: "filter" })}>
-          <input id="elev" type="checkbox" />
+        <div>
+          <input
+            onClick={() => checkIfChecked({ type: "elevator", id: 3 })}
+            id="elev"
+            type="checkbox"
+          />
           <label htmlFor="elevator"> elevator</label>
         </div>
       </div>

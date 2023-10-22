@@ -9,7 +9,9 @@ const BASE_URL = "http://localhost:5000/houses";
 const HouseContext = createContext();
 const houseReducer = (state, action) => {
   switch (action.type) {
-    case "value":
+    case "filter":
+      {
+      }
       break;
 
     default:
@@ -19,20 +21,15 @@ const houseReducer = (state, action) => {
 function HouseProvider({ children }) {
   const { data, isLoading } = useFetch();
   const initialState = {
-    houses: data,
+    houses: [],
     isHouseLoading: false,
     error: "",
   };
   console.log(initialState);
-  const [{ houses, isHouseLoading }, dispatch] = useReducer(
-    initialState,
-    houseReducer
-  );
-  const checkIfChecked = async ({ type, id }) => {
- dispatch()
-  };
+  const [{ houses, error }, dispatch] = useReducer(houseReducer, initialState);
+
   return (
-    <HouseContext.Provider value={{ data, isLoading, checkIfChecked }}>
+    <HouseContext.Provider value={{ data, isLoading }}>
       {children}
     </HouseContext.Provider>
   );

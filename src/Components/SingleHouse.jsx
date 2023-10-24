@@ -13,7 +13,7 @@ function SingleHouse() {
 
       <div className='single-house_container'>
         <div className='single-house_img'>
-          <img src={house.img} alt="" />
+          <img src={house.img} alt="house for sell" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, provident.
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione.
 
@@ -21,6 +21,17 @@ function SingleHouse() {
           <div className='single-house_buttons '>
             <button className='btn bg-success text-light ' >Contact info</button>
             <button className='btn bg-danger text-light' >BookMark</button>
+          </div>
+        </div>
+        <div>
+          <h2>{`${house.rooms} bedroom ${house.title}`}</h2>
+          <p>YesterDay in {house.area}</p>
+          <div className='house-info'>
+            <div>Rooms : { }</div>
+<span className='divider'></span>
+            <div>Meterage : { }</div>
+<span className='divider'></span>
+            <div> Made in : { }</div>
           </div>
         </div>
       </div>

@@ -72,6 +72,9 @@ input:focus {
 
 .single-house_container {
   padding: 2.4rem 3.8rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 .single-house_img img {

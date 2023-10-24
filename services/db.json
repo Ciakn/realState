@@ -14,7 +14,8 @@
       "price": "1'390'000",
       "heatinySystem": true,
       "phoneNumber": "09122571562",
-      "title" : "apartmant"
+      "title": "apartmant",
+      "YearOfConstruction": "2015"
     },
     {
       "id": 2,
@@ -30,7 +31,8 @@
       "price": "480'000",
       "heatinySystem": true,
       "phoneNumber": "09122571562",
-      "title" : "apartmant"
+      "title": "apartmant",
+      "YearOfConstruction": "2022"
     },
     {
       "id": 3,
@@ -46,7 +48,8 @@
       "price": "14'300'000",
       "heatinySystem": true,
       "phoneNumber": "09122571562",
-      "title" : "apartmant"
+      "title": "apartmant",
+      "YearOfConstruction": "2018"
     },
     {
       "id": 4,
@@ -60,7 +63,8 @@
       "elavator": false,
       "area": "Tajrish",
       "price": "150'000",
-      "heatinySystem": false
+      "heatinySystem": false,
+      "YearOfConstruction": "2017"
     },
     {
       "id": 5,
@@ -74,7 +78,8 @@
       "elavator": true,
       "area": "AndarzGo",
       "price": "1'300'000",
-      "heatinySystem": false
+      "heatinySystem": false,
+      "YearOfConstruction": "2013"
     },
     {
       "id": 6,
@@ -90,7 +95,8 @@
       "price": "1'300'000",
       "heatinySystem": true,
       "phoneNumber": "09122571562",
-      "title" : "apartmant"
+      "title": "apartmant",
+      "YearOfConstruction": "1987"
     },
     {
       "id": 7,
@@ -104,7 +110,10 @@
       "elavator": true,
       "area": "chitgar",
       "price": "1'400'000",
-      "heatinySystem": false
+      "heatinySystem": false,
+        "phoneNumber": "09122571562",
+        "title": "apartmant",
+        "YearOfConstruction": "2012"
     },
     {
       "id": 8,
@@ -118,7 +127,10 @@
       "elavator": false,
       "area": "Zaaferanie",
       "price": "800'000",
-      "heatinySystem": false
+      "heatinySystem": false,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfConstruction": "2023"
     },
     {
       "id": 9,
@@ -134,7 +146,8 @@
       "price": "3'300'000",
       "heatinySystem": true,
       "phoneNumber": "09122571562",
-      "title" : "apartmant"
+      "title": "apartmant",
+      "YearOfConstruction": "2011"
     },
     {
       "id": 10,
@@ -148,7 +161,10 @@
       "elavator": false,
       "area": "Yousef Abad",
       "price": "300'000",
-      "heatinySystem": false
+      "heatinySystem": false,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfConstruction": "2010"
     }
   ]
 }

@@ -26,7 +26,7 @@ function HomeContainer() {
                 Perferendis, facere.
               </p>
               <Link to={`singlehouse/${house?.id}`} className="btn btn-pri">
-                more...
+                BUY HOUSE
               </Link>
             </div>
           </div>

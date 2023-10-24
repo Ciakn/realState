@@ -8,7 +8,7 @@ export const useFetch = (url, query = "") => {
     async function fetchData() {
       setIsLoading(true);
       try {
-        const { data } = await axios.get("http://localhost:5000/houses");
+        const { data } = await axios.get(`http://localhost:5000/houses/${query}`);
 
         setData(data);
         setIsLoading(false);

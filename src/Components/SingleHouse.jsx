@@ -1,8 +1,19 @@
 import React from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
+import { useFetch } from '../hooks/useFetch';
 
-function SingleHouse() { 
+function SingleHouse() {
+  const { id } = useParams();
+  const { data: house, isLoading } = useFetch("", id);
+
   return (
-    <div>SingleHouse</div>
+    <div>{house.map(item => {
+      return (
+        <div className='single-house_Container'>
+
+        </div>
+      )
+    })}</div>
   )
 }
 

@@ -12,7 +12,9 @@
       "elavator": true,
       "area": "Jordan",
       "price": "1'390'000",
-      "heatinySystem": true
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title" : "apartmant"
     },
     {
       "id": 2,
@@ -26,7 +28,9 @@
       "elavator": true,
       "area": "Nezam Abad",
       "price": "480'000",
-      "heatinySystem": true
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title" : "apartmant"
     },
     {
       "id": 3,
@@ -40,7 +44,9 @@
       "elavator": true,
       "area": "Elahie",
       "price": "14'300'000",
-      "heatinySystem": true
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title" : "apartmant"
     },
     {
       "id": 4,
@@ -82,7 +88,9 @@
       "elavator": false,
       "area": "Azadi",
       "price": "1'300'000",
-      "heatinySystem": true
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title" : "apartmant"
     },
     {
       "id": 7,
@@ -124,7 +132,9 @@
       "elavator": true,
       "area": "Saa'adt abad",
       "price": "3'300'000",
-      "heatinySystem": true
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title" : "apartmant"
     },
     {
       "id": 10,

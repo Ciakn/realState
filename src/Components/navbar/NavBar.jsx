@@ -4,11 +4,12 @@ import { NavLink } from "react-router-dom";
 import { useHouse } from "../../providers/HouseProvider";
 
 function NavBar() {
-  const { data, isLoading, checkIfChecked } = useHouse();
-  const [showOptions, setShowOptions] = useState(false);
-  const [elevator, setEelevator] = useState(false);
-  const [parkingLot, setParkingLot] = useState(false);
-  const [balconey, setBalconey] = useState(false);
+  const { data, isLoading, searchHandler: searchDisPatcher } = useHouse();
+
+  const searchHandler = (e) => {
+    searchDisPatcher(e.target.value)
+
+  }
   return (
     <div className="navContainer">
       <nav id="nav">
@@ -18,18 +19,8 @@ function NavBar() {
             Home
           </NavLink>
         </div>
-        <div className="optionContainer">
-          <div onClick={() => setShowOptions(!showOptions)} className="text">
-            options
-          </div>
-
-          <div className="text">
-            {showOptions && (
-              <div>
-                <MoreOptions checkIfChecked={checkIfChecked} />
-              </div>
-            )}
-          </div>
+        <div className="searchBar">
+          <input type="text" onChange={(e) => searchHandler(e)} placeholder="search" />
         </div>
         <div className="text">price</div>
       </nav>
@@ -43,7 +34,7 @@ const MoreOptions = ({ checkIfChecked }) => {
   return (
     <div className="moreOptionContainer">
       <div className="optionList">
-        <div>room : {}</div>
+        <div>room : { }</div>
         <div>
           <input
             onClick={() => checkIfChecked({ type: "parking", id: 1 })}

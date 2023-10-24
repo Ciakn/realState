@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useHouse } from "../providers/HouseProvider";
+import { filter } from "lodash";
 
 function HomeContainer() {
-  const { data, isLoading } = useHouse();
+  const { data, isLoading, filterData } = useHouse();
+  const [filteredHouses, setFilteredHouse] = useState([])
+  useEffect(() => {
 
+    (filterData.length === 0) ? setFilteredHouse(data) : setFilteredHouse(filterData);
+
+  }, [filterData , data])
+  console.log(filteredHouses);
   return (
     <div className="homeContainer">
-      {data.map((house, index) => (
+      {filteredHouses.map((house, index) => (
         <div key={house.id} className="card">
           <img src={house.img} className="card-img-top" alt="..." />
           <div className="card-body">

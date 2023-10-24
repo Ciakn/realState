@@ -4,12 +4,28 @@
   align-items: center;
   width: 80%;
   margin: 0 auto;
+
 }
+
 .text {
   color: var(--light);
   font-weight: bold;
   cursor: pointer;
 }
+
+input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+
+.searchBar input {
+  border: none;
+  padding: var(--padding);
+  outline: none;
+
+  border-radius: var(--border-radius);
+}
+
 .navContainer {
   width: auto;
   background-color: var(--primary);
@@ -17,15 +33,17 @@
   text-align: center;
   display: flex;
 }
-.moreOptionContainer{
-    background-color: var(--primary);
-    width: 160px;
-    height: 190px;
-    position: absolute;
-    top: 20%;
-    z-index: 100;
+
+.moreOptionContainer {
+  background-color: var(--primary);
+  width: 160px;
+  height: 190px;
+  position: absolute;
+  top: 20%;
+  z-index: 100;
 
 }
+
 .homeContainer {
   width: 80%;
   margin: 2rem auto;
@@ -34,13 +52,16 @@
   box-shadow: var(--box-shadow);
   gap: 1rem;
 }
+
 .btn-pri {
   background-color: var(--primary) !important;
 }
+
 .card img {
   width: auto;
   height: 150px;
 }
+
 .card-body {
   border: none;
   box-shadow: var(--box-shadow);

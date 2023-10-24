@@ -75,10 +75,10 @@ input:focus {
 }
 
 .single-house_img img {
-  width: 550px;
+  width: 500px;
   height: 300px;
   border-radius: var(--border-radius);
-  padding: 0.5rem 0.8rem;
+ 
 }
 
 .single-house_img {
@@ -88,4 +88,11 @@ input:focus {
   border-radius: var(--border-radius);
   border: 1px solid rgb(189, 189, 189);
   box-shadow: var(--box-shadow);
+  padding: 0.8rem 1rem;
+}
+.single-house_buttons{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1rem;
 }

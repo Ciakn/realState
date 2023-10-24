@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useHouse } from "../../providers/HouseProvider";
-
+import { BsFillBookmarkHeartFill } from "react-icons/bs"
 function NavBar() {
   const { data, isLoading, searchHandler: searchDisPatcher } = useHouse();
 
@@ -20,9 +20,9 @@ function NavBar() {
           </NavLink>
         </div>
         <div className="searchBar">
-          <input type="text" onChange={(e) => searchHandler(e)} placeholder="search" />
+          <input type="text" onChange={(e) => searchHandler(e)} placeholder="search the area" />
         </div>
-        <div className="text">price</div>
+        <Link to="bookmarks" className="btn text-light">Bookmarks  <BsFillBookmarkHeartFill className="text-light" /></Link>
       </nav>
     </div>
   );

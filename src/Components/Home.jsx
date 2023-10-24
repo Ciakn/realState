@@ -20,7 +20,7 @@ function HomeContainer() {
           <div key={house.id} className="card">
             <img src={house.img} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">{house?.title}</h5>
+              <h5 className="card-title"> {house.area} {house?.title} </h5>
               <p className="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis, facere.

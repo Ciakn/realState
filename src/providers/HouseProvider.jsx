@@ -14,7 +14,8 @@ function HouseProvider({ children }) {
 
   const { data, isLoading } = useFetch("");
   const [searchValue, setSearchValue] = useState("");
-  const [filterData, setFilterData] = useState([])
+  const [filterData, setFilterData] = useState([]);
+  const [bookmarks, setBookMarks] = useState([]);
   const searchHandler = (value) => {
     console.log(value);
     setFilterData(data)
@@ -26,12 +27,14 @@ function HouseProvider({ children }) {
     setFilterData(filteredData);
 
   }
-  // }
+  const bookmarkHandler = () => {
+    
+  }
 
 
 
   return (
-    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData }}>
+    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData, bookmarkHandler , bookmarks }}>
       {children}
     </HouseContext.Provider>
   );

@@ -51,7 +51,7 @@ input:focus {
   grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
   justify-content: center;
   align-items: center;
-  box-shadow: var(--box-shadow);
+
   gap: 1rem;
 }
 
@@ -73,15 +73,50 @@ input:focus {
 .single-house_container {
   padding: 2.4rem 3.8rem;
   display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .single-house_img img {
-  width: 500px;
+
   height: 300px;
   border-radius: var(--border-radius);
- 
+
+}
+
+.house-summery {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.house-summery>div {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: 0.2rem;
+  border-right: solid 1px rgb(188, 187, 187);
+}
+
+.description {
+  width: 400px;
+}
+
+.house-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.house-info li {
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.desc {
+  border-top: 1px solid gray;
+  margin-top: 2rem;
 }
 
 .single-house_img {
@@ -93,9 +128,10 @@ input:focus {
   box-shadow: var(--box-shadow);
   padding: 0.8rem 1rem;
 }
-.single-house_buttons{
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 1rem;
+
+.single-house_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }

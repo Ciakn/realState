@@ -15,7 +15,7 @@
       "heatinySystem": true,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2015"
+      "YearOfonstruction": "2015"
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       "heatinySystem": true,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2022"
+      "YearOfonstruction": "2022"
     },
     {
       "id": 3,
@@ -49,7 +49,7 @@
       "heatinySystem": true,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2018"
+      "YearOfonstruction": "2018"
     },
     {
       "id": 4,
@@ -64,7 +64,7 @@
       "area": "Tajrish",
       "price": "150'000",
       "heatinySystem": false,
-      "YearOfConstruction": "2017"
+      "YearOfonstruction": "2017"
     },
     {
       "id": 5,
@@ -79,7 +79,7 @@
       "area": "AndarzGo",
       "price": "1'300'000",
       "heatinySystem": false,
-      "YearOfConstruction": "2013"
+      "YearOfonstruction": "2013"
     },
     {
       "id": 6,
@@ -96,7 +96,7 @@
       "heatinySystem": true,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "1987"
+      "YearOfonstruction": "1987"
     },
     {
       "id": 7,
@@ -113,7 +113,7 @@
       "heatinySystem": false,
         "phoneNumber": "09122571562",
         "title": "apartmant",
-        "YearOfConstruction": "2012"
+        "YearOfonstruction": "2012"
     },
     {
       "id": 8,
@@ -130,7 +130,7 @@
       "heatinySystem": false,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2023"
+      "YearOfonstruction": "2023"
     },
     {
       "id": 9,
@@ -147,7 +147,7 @@
       "heatinySystem": true,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2011"
+      "YearOfonstruction": "2011"
     },
     {
       "id": 10,
@@ -164,7 +164,7 @@
       "heatinySystem": false,
       "phoneNumber": "09122571562",
       "title": "apartmant",
-      "YearOfConstruction": "2010"
+      "YearOfonstruction": "2010"
     }
   ]
 }

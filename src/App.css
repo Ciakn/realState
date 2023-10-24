@@ -69,3 +69,23 @@ input:focus {
   box-shadow: var(--box-shadow);
   outline: none;
 }
+
+.single-house_container {
+  padding: 2.4rem 3.8rem;
+}
+
+.single-house_img img {
+  width: 550px;
+  height: 300px;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.8rem;
+}
+
+.single-house_img {
+
+  text-align: center;
+  width: 560px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgb(189, 189, 189);
+  box-shadow: var(--box-shadow);
+}

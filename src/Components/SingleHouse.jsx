@@ -26,12 +26,12 @@ function SingleHouse() {
         <div>
           <h2>{`${house.rooms} bedroom ${house.title}`}</h2>
           <p>YesterDay in {house.area}</p>
-          <div className='house-info'>
-            <div>Rooms : { }</div>
-<span className='divider'></span>
-            <div>Meterage : { }</div>
-<span className='divider'></span>
-            <div> Made in : { }</div>
+          <div className='house-summery'>
+            <div>Rooms : {house.rooms}</div>
+            <span className='divider'></span>
+            <div>Meterage : {house.Meterage}</div>
+            <span className='divider'></span>
+            <div> Made in : {house.YearOfConstruction}</div>
           </div>
         </div>
       </div>

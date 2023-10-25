@@ -169,5 +169,40 @@
       "YearOfonstruction": "2010"
     }
   ],
-  "bookmarks": []
+  "bookmarks": [
+    {
+      "id": 2,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "1",
+      "Meterage": "71",
+      "img": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg?w=740&t=st=1697394654~exp=1697395254~hmac=d597a21e5bec8ddc7f8c85fad3bfb332978b6b47bb5a4f0fee08dd636af4b00f",
+      "balcony": true,
+      "parkingLot": true,
+      "elavator": true,
+      "area": "Nezam Abad",
+      "price": "480'000",
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "2022"
+    },
+    {
+      "id": 1,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "2",
+      "Meterage": "113",
+      "img": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?w=740&t=st=1697394580~exp=1697395180~hmac=ff6b95494449dfe5e92a0dc6b544c8d752627e6f4a12dce670e06f21009f89a5",
+      "balcony": true,
+      "parkingLot": true,
+      "elavator": true,
+      "area": "Jordan",
+      "price": "1'390'000",
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "2015"
+    }
+  ]
 }

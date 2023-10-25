@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch';
 import { BsCheckSquareFill, BsFillFileEarmarkCheckFill, BsFillFileEarmarkExcelFill, BsFillBookmarkHeartFill } from "react-icons/bs"
 import { useHouse } from '../providers/HouseProvider';
 import { useBookmarks } from '../providers/BookMarkProvider';
+import { Slide } from "react-awesome-reveal";
 function SingleHouse() {
+  const [currentHouse, setCurrentHousse] = useState([]);
+  const [showNumber, setShowNumber] = useState(false);
   const { id } = useParams();
   const { data: house, isLoading, } = useFetch("", id);
-  const { BookMarkHandler } = useBookmarks()
+  const { BookMarkHandler } = useBookmarks();
   if (isLoading) return <p>Loading...</p>
-  console.log(parseInt(house.price, 10));
 
   return (
     <div>
+      <div className={`phoneNumber-container ${showNumber && "show-number"}`} >
 
+
+        <Slide>
+          <div className='phone-info'>
+            <div>{house.phoneNumber}</div>
+            <div  onClick={()=>setShowNumber(!showNumber)}>X</div>
+
+          </div>
+        </Slide>
+      </div>
       <div className='single-house_container'>
         <div className='single-house_img'>
           <img src={house.img} alt="house for sell" />
@@ -22,7 +34,7 @@ function SingleHouse() {
 
           </p>
           <div className='single-house_buttons '>
-            <button className='btn bg-success text-light '  >Contact info</button>
+            <button className='btn bg-success text-light ' onClick={() => setShowNumber(!showNumber)} >Contact info</button>
             <button className='btn bg-danger text-light' onClick={() => BookMarkHandler(house)} >BookMark <BsFillBookmarkHeartFill className="text-light" /></button>
           </div>
         </div>

@@ -3,10 +3,11 @@ import { useParams, useSearchParams } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch';
 import { BsCheckSquareFill, BsFillFileEarmarkCheckFill, BsFillFileEarmarkExcelFill, BsFillBookmarkHeartFill } from "react-icons/bs"
 import { useHouse } from '../providers/HouseProvider';
+import { useBookmarks } from '../providers/BookMarkProvider';
 function SingleHouse() {
   const { id } = useParams();
   const { data: house, isLoading, } = useFetch("", id);
-  const { BookMarkHandler } = useHouse()
+  const { BookMarkHandler } = useBookmarks()
   if (isLoading) return <p>Loading...</p>
   console.log(parseInt(house.price, 10));
 

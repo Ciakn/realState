@@ -6,8 +6,10 @@ const BookMarkContext = createContext();
 function BookMarkProvider({ children }) {
     const [bookmarks, setBookMarks] = useState([]);
     const BookMarkHandler = async (bookmark) => {
+        console.log(bookmark);
         try {
             const { data } = await axios.post(`http://localhost:5000/bookmarks`, bookmark);
+            
 
 
         } catch (error) {
@@ -15,7 +17,14 @@ function BookMarkProvider({ children }) {
         }
 
     }
-
+    const removeBookMark = async (id) => {
+        console.log(id , `delete`);
+        try {
+            await axios.delete(`http://localhost:5000/bookmarks/${id}`)
+        } catch (error) {
+            console.log(error);
+        }
+    }
     const getBookMarks = async () => {
         try {
             const { data } = await axios.get(`http://localhost:5000/bookmarks`);
@@ -26,11 +35,11 @@ function BookMarkProvider({ children }) {
         }
     }
     return (
-        <BookMarkContext.Provider value={{ bookmarks, getBookMarks, BookMarkHandler }}>
+        <BookMarkContext.Provider value={{ bookmarks, getBookMarks, BookMarkHandler, removeBookMark }}>
             {children}
         </BookMarkContext.Provider>
     )
 }
 
 export default BookMarkProvider
-export const useBookmarks = ()=>  useContext(BookMarkContext)
+export const useBookmarks = () => useContext(BookMarkContext)

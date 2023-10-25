@@ -1,11 +1,8 @@
 import axios from "axios";
-import { functions, initial } from "lodash";
 import React, { Children, useState } from "react";
-import { useReducer } from "react";
 import { useContext } from "react";
 import { createContext } from "react";
 import { useFetch } from "../hooks/useFetch";
-import { useEffect } from "react";
 const BASE_URL = "http://localhost:5000/houses";
 const HouseContext = createContext();
 
@@ -28,29 +25,29 @@ function HouseProvider({ children }) {
     setFilterData(filteredData);
 
   }
-  const BookMarkHandler = async (bookmark) => {
-    try {
-      const { data } = await axios.post(`http://localhost:5000/bookmarks`, bookmark);
+  // const BookMarkHandler = async (bookmark) => {
+  //   try {
+  //     const { data } = await axios.post(`http://localhost:5000/bookmarks`, bookmark);
 
 
-    } catch (error) {
-      console.log(error);
-    }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
 
-  }
+  // }
 
-  const getBookMarks = async () => {
-    try {
-      const { data } = await axios.get(`http://localhost:5000/bookmarks`);
-      console.log(data);
-      setBookMarks(data)
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  // const getBookMarks = async () => {
+  //   try {
+  //     const { data } = await axios.get(`http://localhost:5000/bookmarks`);
+  //     console.log(data);
+  //     setBookMarks(data)
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
   return (
-    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData, BookMarkHandler, bookmarks, getBookMarks }}>
+    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData  }}>
       {children}
     </HouseContext.Provider>
   );

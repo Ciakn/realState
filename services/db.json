@@ -63,6 +63,8 @@
       "elavator": false,
       "area": "Tajrish",
       "price": "150'000",
+      "title" : "apartmant",
+      "phoneNumber" : "09122571562",
       "heatinySystem": false,
       "YearOfonstruction": "2017"
     },
@@ -215,6 +217,7 @@
       "area": "Tajrish",
       "price": "150'000",
       "heatinySystem": false,
+      "title": "apartmant",
       "YearOfonstruction": "2017"
     },
     {

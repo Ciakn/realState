@@ -1,10 +1,12 @@
 import React from 'react'
 import { useParams, useSearchParams } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch';
-import { BsCheckSquareFill, BsFillFileEarmarkCheckFill, BsFillFileEarmarkExcelFill } from "react-icons/bs"
+import { BsCheckSquareFill, BsFillFileEarmarkCheckFill, BsFillFileEarmarkExcelFill, BsFillBookmarkHeartFill } from "react-icons/bs"
+import { useHouse } from '../providers/HouseProvider';
 function SingleHouse() {
   const { id } = useParams();
-  const { data: house, isLoading, bookmarkHandler } = useFetch("", id);
+  const { data: house, isLoading, } = useFetch("", id);
+  const { BookMarkHandler } = useHouse()
   if (isLoading) return <p>Loading...</p>
   console.log(parseInt(house.price, 10));
 
@@ -20,7 +22,7 @@ function SingleHouse() {
           </p>
           <div className='single-house_buttons '>
             <button className='btn bg-success text-light '  >Contact info</button>
-            <button className='btn bg-danger text-light' onClick={() => bookmarkHandler(house.id)} >BookMark <BsFillBookmarkHeartFill className="text-light" /></button>
+            <button className='btn bg-danger text-light' onClick={() => BookMarkHandler(house)} >BookMark <BsFillBookmarkHeartFill className="text-light" /></button>
           </div>
         </div>
         <div className='description'>

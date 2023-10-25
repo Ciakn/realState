@@ -12,10 +12,11 @@ const HouseContext = createContext();
 
 function HouseProvider({ children }) {
 
-  const { data, isLoading } = useFetch("");
+  const { data, isLoading, } = useFetch("");
   const [searchValue, setSearchValue] = useState("");
   const [filterData, setFilterData] = useState([]);
   const [bookmarks, setBookMarks] = useState([]);
+  console.log(bookmarks);
   const searchHandler = (value) => {
     console.log(value);
     setFilterData(data)
@@ -27,14 +28,29 @@ function HouseProvider({ children }) {
     setFilterData(filteredData);
 
   }
-  const bookmarkHandler = () => {
-    
+  const BookMarkHandler = async (bookmark) => {
+    try {
+      const { data } = await axios.post(`http://localhost:5000/bookmarks`, bookmark);
+
+
+    } catch (error) {
+      console.log(error);
+    }
+
   }
 
-
+  const getBookMarks = async () => {
+    try {
+      const { data } = await axios.get(`http://localhost:5000/bookmarks`);
+      console.log(data);
+      setBookMarks(data)
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
-    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData, bookmarkHandler , bookmarks }}>
+    <HouseContext.Provider value={{ data, isLoading, searchHandler, filterData, BookMarkHandler, bookmarks, getBookMarks }}>
       {children}
     </HouseContext.Provider>
   );

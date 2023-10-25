@@ -111,9 +111,9 @@
       "area": "chitgar",
       "price": "1'400'000",
       "heatinySystem": false,
-        "phoneNumber": "09122571562",
-        "title": "apartmant",
-        "YearOfonstruction": "2012"
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "2012"
     },
     {
       "id": 8,
@@ -165,6 +165,74 @@
       "phoneNumber": "09122571562",
       "title": "apartmant",
       "YearOfonstruction": "2010"
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": 6,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "2",
+      "Meterage": "93",
+      "img": "https://img.freepik.com/free-photo/lodge-resort-thailand_1388-203.jpg?w=360&t=st=1697394824~exp=1697395424~hmac=2a26c10411869a0fb1076468b2afcecdb4ddc98c04918d086364cf6248bff352",
+      "balcony": true,
+      "parkingLot": false,
+      "elavator": false,
+      "area": "Azadi",
+      "price": "1'300'000",
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "1987"
+    },
+    {
+      "id": 1,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "2",
+      "Meterage": "113",
+      "img": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?w=740&t=st=1697394580~exp=1697395180~hmac=ff6b95494449dfe5e92a0dc6b544c8d752627e6f4a12dce670e06f21009f89a5",
+      "balcony": true,
+      "parkingLot": true,
+      "elavator": true,
+      "area": "Jordan",
+      "price": "1'390'000",
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "2015"
+    },
+    {
+      "id": 4,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "0",
+      "Meterage": "40",
+      "img": "https://img.freepik.com/free-photo/luxury-house-real-estate-sale-property-generative-ai_169016-29360.jpg?w=826&t=st=1697394743~exp=1697395343~hmac=4f087e5ccac558ef11cb505e94b8268ea92cb08936af9618aabff05fe1e523f2",
+      "balcony": false,
+      "parkingLot": false,
+      "elavator": false,
+      "area": "Tajrish",
+      "price": "150'000",
+      "heatinySystem": false,
+      "YearOfonstruction": "2017"
+    },
+    {
+      "id": 9,
+      "city": "tehran",
+      "country": "iran",
+      "rooms": "4",
+      "Meterage": "254",
+      "img": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150763.jpg?t=st=1697394863~exp=1697395463~hmac=e4515c6854e9c1f6bbc86b762a8c9cc32b23b07beb1b17f94b43182019e50aca",
+      "balcony": true,
+      "parkingLot": true,
+      "elavator": true,
+      "area": "Saa'adt abad",
+      "price": "3'300'000",
+      "heatinySystem": true,
+      "phoneNumber": "09122571562",
+      "title": "apartmant",
+      "YearOfonstruction": "2011"
     }
   ]
 }
